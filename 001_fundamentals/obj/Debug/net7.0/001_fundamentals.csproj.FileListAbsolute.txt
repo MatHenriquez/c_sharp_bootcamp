@@ -1,0 +1,15 @@
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_fundamentals\bin\Debug\net7.0\001_fundamentals.exe
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_fundamentals\bin\Debug\net7.0\001_fundamentals.deps.json
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_fundamentals\bin\Debug\net7.0\001_fundamentals.runtimeconfig.json
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_fundamentals\bin\Debug\net7.0\001_fundamentals.dll
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_fundamentals\bin\Debug\net7.0\001_fundamentals.pdb
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_fundamentals\obj\Debug\net7.0\001_fundamentals.GeneratedMSBuildEditorConfig.editorconfig
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_fundamentals\obj\Debug\net7.0\001_fundamentals.AssemblyInfoInputs.cache
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_fundamentals\obj\Debug\net7.0\001_fundamentals.AssemblyInfo.cs
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_fundamentals\obj\Debug\net7.0\001_fundamentals.csproj.CoreCompileInputs.cache
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_fundamentals\obj\Debug\net7.0\001_fundamentals.sourcelink.json
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_fundamentals\obj\Debug\net7.0\001_fundamentals.dll
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_fundamentals\obj\Debug\net7.0\refint\001_fundamentals.dll
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_fundamentals\obj\Debug\net7.0\001_fundamentals.pdb
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_fundamentals\obj\Debug\net7.0\001_fundamentals.genruntimeconfig.cache
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_fundamentals\obj\Debug\net7.0\ref\001_fundamentals.dll
