@@ -9,5 +9,6 @@ class Program
         Console.WriteLine("Hello World");
         Console.WriteLine(LambdasCases.RegularLambdaSum(1, 2));
         Console.WriteLine(LambdasCases.DefaultValuesSum());
+        Console.WriteLine(LambdasCases.VarLambdaSum(1, 2, 3));
     }
 }
