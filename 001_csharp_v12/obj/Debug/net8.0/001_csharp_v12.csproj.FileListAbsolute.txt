@@ -1,0 +1,15 @@
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_csharp_v12\obj\Debug\net8.0\001_csharp_v12.GeneratedMSBuildEditorConfig.editorconfig
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_csharp_v12\obj\Debug\net8.0\001_csharp_v12.AssemblyInfoInputs.cache
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_csharp_v12\obj\Debug\net8.0\001_csharp_v12.AssemblyInfo.cs
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_csharp_v12\obj\Debug\net8.0\001_csharp_v12.csproj.CoreCompileInputs.cache
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_csharp_v12\obj\Debug\net8.0\001_csharp_v12.sourcelink.json
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_csharp_v12\bin\Debug\net8.0\001_csharp_v12.exe
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_csharp_v12\bin\Debug\net8.0\001_csharp_v12.deps.json
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_csharp_v12\bin\Debug\net8.0\001_csharp_v12.runtimeconfig.json
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_csharp_v12\bin\Debug\net8.0\001_csharp_v12.dll
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_csharp_v12\bin\Debug\net8.0\001_csharp_v12.pdb
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_csharp_v12\obj\Debug\net8.0\001_csharp_v12.dll
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_csharp_v12\obj\Debug\net8.0\refint\001_csharp_v12.dll
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_csharp_v12\obj\Debug\net8.0\001_csharp_v12.pdb
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_csharp_v12\obj\Debug\net8.0\001_csharp_v12.genruntimeconfig.cache
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\001_csharp_v12\obj\Debug\net8.0\ref\001_csharp_v12.dll
