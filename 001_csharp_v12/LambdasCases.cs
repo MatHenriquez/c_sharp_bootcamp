@@ -11,11 +11,14 @@ namespace _001_csharp_v12
             return LambdaSum(x, y);
         }
 
-        // Sum with default values
-        public static int DefaultValuesLambaSum(int x = 0, int y = 0)
+        // Sum with default values.
+        public static int DefaultValuesSum(int x = 0, int y = 0)
         {
             Func<int ,int, int> LambdaSum = (int x,int y) => x + y;
             return LambdaSum(x, y);
         }
+
+        // Lambda sum with default values.
+        public static Func<int, int, int> DefaultValuesLambdaSum = (int x = 0, int y = 0) => x + y;
     }
 }
