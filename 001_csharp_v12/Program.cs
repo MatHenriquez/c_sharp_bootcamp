@@ -11,5 +11,6 @@ class Program
         Console.WriteLine(LambdasCases.DefaultValuesSum());
         Console.WriteLine(LambdasCases.VarLambdaSum(1, 2, 3));
         Console.WriteLine(new Person(0, "Matías", "Henríquez").getCompleteName());
+        Console.WriteLine(new Person(0, "Matías", "Henríquez").localGetAllInfo());
     }
 }

@@ -14,5 +14,11 @@ namespace _001_csharp_v12
         {
             return $"{this.Name} {this.LastName}";
         }
+
+        public string localGetAllInfo()
+        {
+            Func<int, string, string, string> getAllInfo = (int id, string name, string lastName) => $"Person {id}, full name: {name} {lastName}"; // Local function
+            return getAllInfo(this.Id, this.Name, this.LastName);
+        }
     }
 }
