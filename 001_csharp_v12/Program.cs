@@ -10,9 +10,9 @@ class Program
         Console.WriteLine(LambdasCases.RegularLambdaSum(1, 2));
         Console.WriteLine(LambdasCases.DefaultValuesSum());
         Console.WriteLine(LambdasCases.VarLambdaSum(1, 2, 3));
-        Console.WriteLine(new Person(0, "Matías", "Henríquez").getCompleteName());
-        Console.WriteLine(new Person(0, "Matías", "Henríquez").localGetAllInfo());
-        Console.WriteLine(new Person(0, "Matías", "Henríquez").getId());
+        Console.WriteLine(new Person(0, "Matías", "Henríquez").GetCompleteName());
+        Console.WriteLine(new Person(0, "Matías", "Henríquez").LocalGetAllInfo());
+        Console.WriteLine(new Person(0, "Matías", "Henríquez").GetId());
 
         Person me = new Person(0, "Matías", "Henríquez");
         Console.WriteLine(me.GetGreetings("Matías"));

@@ -10,18 +10,18 @@ namespace _001_csharp_v12
         public string LastName { get; set; } = lastName;
 
         //RegularExpressionAttribute method
-        public string getCompleteName()
+        public string GetCompleteName()
         {
             return $"{this.Name} {this.LastName}";
         }
 
-        public string localGetAllInfo()
+        public string LocalGetAllInfo()
         {
             Func<int, string, string, string> getAllInfo = (int id, string name, string lastName) => $"Person {id}, full name: {name} {lastName}";
             return getAllInfo(this.Id, this.Name, this.LastName);
         }
 
-        public string getId()
+        public string GetId()
         {
             return getIdAsString();
 
