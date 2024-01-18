@@ -1,0 +1,15 @@
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\DemoBooks\bin\Debug\net8.0\DemoBooks.exe
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\DemoBooks\bin\Debug\net8.0\DemoBooks.deps.json
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\DemoBooks\bin\Debug\net8.0\DemoBooks.runtimeconfig.json
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\DemoBooks\bin\Debug\net8.0\DemoBooks.dll
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\DemoBooks\bin\Debug\net8.0\DemoBooks.pdb
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\DemoBooks\obj\Debug\net8.0\DemoBooks.GeneratedMSBuildEditorConfig.editorconfig
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\DemoBooks\obj\Debug\net8.0\DemoBooks.AssemblyInfoInputs.cache
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\DemoBooks\obj\Debug\net8.0\DemoBooks.AssemblyInfo.cs
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\DemoBooks\obj\Debug\net8.0\DemoBooks.csproj.CoreCompileInputs.cache
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\DemoBooks\obj\Debug\net8.0\DemoBooks.sourcelink.json
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\DemoBooks\obj\Debug\net8.0\DemoBooks.dll
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\DemoBooks\obj\Debug\net8.0\refint\DemoBooks.dll
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\DemoBooks\obj\Debug\net8.0\DemoBooks.pdb
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\DemoBooks\obj\Debug\net8.0\DemoBooks.genruntimeconfig.cache
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\DemoBooks\obj\Debug\net8.0\ref\DemoBooks.dll
