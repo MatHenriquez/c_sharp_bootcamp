@@ -13,5 +13,8 @@ class Program
         Console.WriteLine(new Person(0, "Matías", "Henríquez").getCompleteName());
         Console.WriteLine(new Person(0, "Matías", "Henríquez").localGetAllInfo());
         Console.WriteLine(new Person(0, "Matías", "Henríquez").getId());
+
+        Person me = new Person(0, "Matías", "Henríquez");
+        Console.WriteLine(me.GetGreetings("Matías"));
     }
 }

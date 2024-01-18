@@ -30,5 +30,15 @@ namespace _001_csharp_v12
                 return this.Id.ToString();
             }
         }
+
+        public string GetGreetings(string firstName)
+        {
+            string Message(string firstName)
+            {
+                return $"Hello, {firstName}";
+            }
+
+            return Message(firstName);
+        }
     }
 }
