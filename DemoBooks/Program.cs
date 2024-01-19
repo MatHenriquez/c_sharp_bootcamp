@@ -3,21 +3,26 @@ using DemoBooks.utils;
 
 while (true) // only gets out if find a return statement
 {
+    Console.Clear();
+
     int? option = GetOptions();
     OptionEnum optionEnum = (OptionEnum)option;
 
-    if (optionEnum == OptionEnum.Exit)
+    if (option == 5)
         return;
 
-    string meessage = optionEnum switch
+    string message = optionEnum switch
     {
         OptionEnum.Add => BookService.AddBook(),
         OptionEnum.Update => BookService.UpdateBook(),
         OptionEnum.Delete => "Delete book",
-        OptionEnum.GetAll => "Get all books",
+        OptionEnum.GetAll => BookService.GetAll(),
         OptionEnum.Exit => "Salir",
         _ => "Invalid option"
     };
+
+    Console.WriteLine("Press Enter to continue...");
+    Console.ReadLine();
 }
 
 static int? GetOptions()

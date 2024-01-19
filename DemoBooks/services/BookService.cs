@@ -71,7 +71,7 @@ namespace DemoBooks.services
             }
         }
 
-        public static void GetAll()
+        public static string GetAll()
         {
             foreach (Book book in books)
             {
@@ -83,6 +83,8 @@ namespace DemoBooks.services
                 Console.WriteLine(book.IsAvailable);
                 Console.WriteLine("");
             }
+
+            return "";
         }
     }
 }
