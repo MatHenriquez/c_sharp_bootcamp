@@ -1,4 +1,5 @@
 ﻿using DemoBooks.entitites;
+using Newtonsoft.Json;
 
 namespace DemoBooks.services
 {
@@ -31,6 +32,7 @@ namespace DemoBooks.services
 
             books.Add(newBook);
 
+            PersistBooks(books);
             string message = $"The book {newBook.Title} has been created successfully";
             Console.WriteLine(message);
 
@@ -98,7 +100,7 @@ namespace DemoBooks.services
             string message;
             if (wasDeleted)
                 message = $"Book with ID {id} was deleted successfully";
-            else 
+            else
                 message = $"Book not found";
 
             Console.WriteLine(message);
@@ -108,6 +110,15 @@ namespace DemoBooks.services
         public static string Exit()
         {
             return "";
+        }
+
+        private static void Persist(List<Book> books)
+        {
+            string json = JsonConvert.SerializeObject(books);
+            string relativePath = @"books.json";
+            string absolutePath = Path.Combine(Directory.GetCurrentDirectory(), relativePath);
+            File.WriteAllText(absolutePath, json);
+            return;
         }
     }
 }

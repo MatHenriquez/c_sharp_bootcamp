@@ -13,3 +13,6 @@ G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\DemoBooks\obj\Debug\net8
 G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\DemoBooks\obj\Debug\net8.0\DemoBooks.pdb
 G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\DemoBooks\obj\Debug\net8.0\DemoBooks.genruntimeconfig.cache
 G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\DemoBooks\obj\Debug\net8.0\ref\DemoBooks.dll
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\DemoBooks\bin\Debug\net8.0\Newtonsoft.Json.dll
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\DemoBooks\obj\Debug\net8.0\DemoBooks.csproj.AssemblyReference.cache
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\DemoBooks\obj\Debug\net8.0\DemoBooks.csproj.CopyComplete
