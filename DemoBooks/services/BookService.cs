@@ -22,7 +22,7 @@ namespace DemoBooks.services
 
             Book newBook = new Book
             {
-                Id = 1,
+                Id = 0,
                 Title = title,
                 Author = author,
                 Description = description,
@@ -32,7 +32,11 @@ namespace DemoBooks.services
 
             books.Add(newBook);
 
-            Persist(books);
+            List<Book> currentBooks = ReadFile();
+            newBook.Id = currentBooks.Count + 1;
+            currentBooks.Add(newBook);
+
+            Persist(currentBooks);
             string message = $"The book {newBook.Title} has been created successfully";
             Console.WriteLine(message);
 
@@ -68,6 +72,7 @@ namespace DemoBooks.services
                 toUpdateBook.Description = description;
                 toUpdateBook.Category = category;
 
+                Persist(books);
                 string message = $"Book with ID {toUpdateBook.Id} updated successfully";
                 return message;
             }
@@ -103,6 +108,7 @@ namespace DemoBooks.services
             else
                 message = $"Book not found";
 
+            Persist(books);
             Console.WriteLine(message);
             return message;
         }
@@ -121,7 +127,7 @@ namespace DemoBooks.services
             return;
         }
 
-        private static void ReadFile()
+        private static List<Book> ReadFile()
         {
             string relativePath = @"books.json";
             string absolutePath = Path.Combine(Directory.GetCurrentDirectory(), relativePath);
@@ -139,6 +145,8 @@ namespace DemoBooks.services
                 Console.WriteLine(book.IsAvailable);
                 Console.WriteLine("");
             }
+
+            return allBooks;
         }
     }
 }
