@@ -86,5 +86,23 @@ namespace DemoBooks.services
 
             return "";
         }
+
+        public static string Delete()
+        {
+            Console.WriteLine("Enter the ID of the book to be deleted: ");
+            string? id = Console.ReadLine();
+
+            Book foundBook = books.FirstOrDefault(book => book.Id.ToString() == id);
+
+            Boolean wasDeleted = books.Remove(foundBook);
+            string message;
+            if (wasDeleted)
+                message = $"Book with ID {id} was deleted successfully";
+            else 
+                message = $"Book not found";
+
+            Console.WriteLine(message);
+            return message;
+        }
     }
 }
