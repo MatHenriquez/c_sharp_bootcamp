@@ -32,7 +32,7 @@ namespace DemoBooks.services
 
             books.Add(newBook);
 
-            PersistBooks(books);
+            Persist(books);
             string message = $"The book {newBook.Title} has been created successfully";
             Console.WriteLine(message);
 
@@ -75,17 +75,17 @@ namespace DemoBooks.services
 
         public static string GetAll()
         {
-            foreach (Book book in books)
-            {
-                Console.WriteLine($"Book {book.Id}:");
-                Console.WriteLine(book.Title);
-                Console.WriteLine(book.Description);
-                Console.WriteLine(book.Author);
-                Console.WriteLine(book.Category);
-                Console.WriteLine(book.IsAvailable);
-                Console.WriteLine("");
-            }
-
+            //foreach (Book book in books)
+            //{
+            //    Console.WriteLine($"Book {book.Id}:");
+            //    Console.WriteLine(book.Title);
+            //    Console.WriteLine(book.Description);
+            //    Console.WriteLine(book.Author);
+            //    Console.WriteLine(book.Category);
+            //    Console.WriteLine(book.IsAvailable);
+            //    Console.WriteLine("");
+            //}
+            ReadFile();
             return "";
         }
 
@@ -119,6 +119,26 @@ namespace DemoBooks.services
             string absolutePath = Path.Combine(Directory.GetCurrentDirectory(), relativePath);
             File.WriteAllText(absolutePath, json);
             return;
+        }
+
+        private static void ReadFile()
+        {
+            string relativePath = @"books.json";
+            string absolutePath = Path.Combine(Directory.GetCurrentDirectory(), relativePath);
+            string books = File.ReadAllText(absolutePath);
+            
+            List<Book> allBooks = JsonConvert.DeserializeObject<List<Book>>(books);
+
+            foreach (Book book in allBooks)
+            {
+                Console.WriteLine($"Book {book.Id}:");
+                Console.WriteLine(book.Title);
+                Console.WriteLine(book.Description);
+                Console.WriteLine(book.Author);
+                Console.WriteLine(book.Category);
+                Console.WriteLine(book.IsAvailable);
+                Console.WriteLine("");
+            }
         }
     }
 }
