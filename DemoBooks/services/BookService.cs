@@ -31,7 +31,10 @@ namespace DemoBooks.services
 
             books.Add(newBook);
 
-            return $"The book {newBook.Title} has been created successfully";
+            string message = $"The book {newBook.Title} has been created successfully";
+            Console.WriteLine(message);
+
+            return message;
         }
 
         public static string UpdateBook()
@@ -63,7 +66,8 @@ namespace DemoBooks.services
                 toUpdateBook.Description = description;
                 toUpdateBook.Category = category;
 
-                return $"Book with ID {toUpdateBook.Id} updated successfully";
+                string message = $"Book with ID {toUpdateBook.Id} updated successfully";
+                return message;
             }
         }
     }
