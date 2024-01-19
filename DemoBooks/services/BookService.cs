@@ -70,5 +70,19 @@ namespace DemoBooks.services
                 return message;
             }
         }
+
+        public static void GetAll()
+        {
+            foreach (Book book in books)
+            {
+                Console.WriteLine($"Book {book.Id}:");
+                Console.WriteLine(book.Title);
+                Console.WriteLine(book.Description);
+                Console.WriteLine(book.Author);
+                Console.WriteLine(book.Category);
+                Console.WriteLine(book.IsAvailable);
+                Console.WriteLine("");
+            }
+        }
     }
 }
