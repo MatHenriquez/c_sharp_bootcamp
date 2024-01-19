@@ -104,5 +104,10 @@ namespace DemoBooks.services
             Console.WriteLine(message);
             return message;
         }
+
+        public static string Exit()
+        {
+            return "";
+        }
     }
 }

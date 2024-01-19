@@ -15,9 +15,9 @@ while (true) // only gets out if find a return statement
     {
         OptionEnum.Add => BookService.AddBook(),
         OptionEnum.Update => BookService.UpdateBook(),
-        OptionEnum.Delete => "Delete book",
+        OptionEnum.Delete => BookService.Delete(),
         OptionEnum.GetAll => BookService.GetAll(),
-        OptionEnum.Exit => "Salir",
+        OptionEnum.Exit => BookService.Exit(),
         _ => "Invalid option"
     };
 
