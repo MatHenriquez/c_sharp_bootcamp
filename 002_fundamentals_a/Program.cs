@@ -38,4 +38,10 @@
     //int myFirstNumber;
     //int mySecondNumber;
     //OutParametersMethod(out myFirstNumber, out mySecondNumber);
+
+    // Generics
+    public void GenericMethod<T>(T myParameter) where T : class
+    {
+        Console.WriteLine(myParameter);
+    }
 }
