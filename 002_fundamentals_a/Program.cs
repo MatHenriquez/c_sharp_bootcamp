@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
-public class DataType
+﻿public class DataType
 {
     // Integers
     sbyte sShortNumber = 127;                   // 8 bits, signed (- or +)
@@ -29,4 +27,15 @@ public class DataType
 
     // Constants
     const int IVA = 21;                         // Fixed value
+
+    public void OutParametersMethod(out int firstNumber, out int secondNumber)
+    {
+        firstNumber = 0;
+        secondNumber = 1;
+    }
+
+    //I can do:
+    //int myFirstNumber;
+    //int mySecondNumber;
+    //OutParametersMethod(out myFirstNumber, out mySecondNumber);
 }
