@@ -14,4 +14,8 @@
     float floatNumber = 15.05f;                 // 32 bits
     double doubleNumber = 10.3232;              // 64 bits
     decimal decimalNumber = 100.0254m;          // 128 bits
+
+    // Text
+    char characters = 'a';                      // 16 bits, single quotes
+    string chain = "Hello";                     // Double quotes
 }
