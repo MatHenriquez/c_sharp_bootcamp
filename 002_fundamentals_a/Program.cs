@@ -1,4 +1,6 @@
-﻿public class DataType
+﻿using System.Runtime.CompilerServices;
+
+public class DataType
 {
     // Integers
     sbyte sShortNumber = 127;                   // 8 bits, signed (- or +)
@@ -23,4 +25,5 @@
     bool isBool = true;                         // Possible values: true or false
     object objectTest = new object();           // Any type
     dynamic dynamicTest = 10;                   // Any type, defined in execution time
+    //var lastName = "Smith";                   // Any type, defined in compilation time
 }
