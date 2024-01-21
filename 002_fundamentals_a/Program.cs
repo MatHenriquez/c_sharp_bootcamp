@@ -52,3 +52,8 @@
         return myNumber;
     }
 }
+
+public class IntegerType : DataType
+{
+    // This class extends DataType
+}
