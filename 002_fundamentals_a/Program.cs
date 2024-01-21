@@ -26,4 +26,7 @@ public class DataType
     object objectTest = new object();           // Any type
     dynamic dynamicTest = 10;                   // Any type, defined in execution time
     //var lastName = "Smith";                   // Any type, defined in compilation time
+
+    // Constants
+    const int IVA = 21;                         // Fixed value
 }
