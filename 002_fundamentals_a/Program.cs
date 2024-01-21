@@ -9,4 +9,9 @@
     uint uintNumber = 2147483648;               // 32 bits, unsigned
     long longNumber = 922564415646;             // 64 bits, signed
     ulong ulongNumber = 9225644156465555555;    // 64 bits, unsigned
+
+    // Rational numbers
+    float floatNumber = 15.05f;                 // 32 bits
+    double doubleNumber = 10.3232;              // 64 bits
+    decimal decimalNumber = 100.0254m;          // 128 bits
 }
