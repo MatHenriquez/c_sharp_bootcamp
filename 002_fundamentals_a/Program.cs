@@ -44,4 +44,11 @@
     {
         Console.WriteLine(myParameter);
     }
+
+    // Sobrecarga
+    public int GenericMethod<T>(T myParameter, int myNumber) where T : class
+    {
+        Console.WriteLine(myParameter);
+        return myNumber;
+    }
 }
