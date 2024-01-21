@@ -18,4 +18,9 @@
     // Text
     char characters = 'a';                      // 16 bits, single quotes
     string chain = "Hello";                     // Double quotes
+
+    // Booleans and objects
+    bool isBool = true;                         // Possible values: true or false
+    object objectTest = new object();           // Any type
+    dynamic dynamicTest = 10;                   // Any type, defined in execution time
 }
