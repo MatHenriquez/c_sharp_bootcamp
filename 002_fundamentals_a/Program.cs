@@ -57,3 +57,28 @@ public class IntegerType : DataType
 {
     // This class extends DataType
 }
+
+public interface IAnimal
+{
+    void Eat();
+    void Walk();
+    void Sleep();
+}
+
+public class Animal : IAnimal
+{
+    public void Eat()
+    {
+        Console.WriteLine("Eating");
+    }
+    public void Walk()
+    {
+        Console.WriteLine("Walking");
+    }
+
+    public void Sleep()
+    {
+        Console.WriteLine("Sleeping");
+    }
+
+}
