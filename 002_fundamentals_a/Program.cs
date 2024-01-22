@@ -80,5 +80,20 @@ public class Animal : IAnimal
     {
         Console.WriteLine("Sleeping");
     }
+}
 
+public abstract class Person
+{
+    public string firstName;
+
+    public abstract void Work();
+}
+public class Matt : Person
+{
+    public string firstName;
+
+    public override void Work()
+    {
+        throw new NotImplementedException();
+    }
 }
