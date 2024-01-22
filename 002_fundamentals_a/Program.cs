@@ -97,3 +97,18 @@ public class Matt : Person
         throw new NotImplementedException();
     }
 }
+
+public class Employee : Person
+{
+    public Employee(string firstName) // Constructor
+    {
+        FirstName = firstName;
+    }
+
+    public string FirstName;
+
+    public override void Work()
+    {
+        throw new NotImplementedException();
+    }
+}
