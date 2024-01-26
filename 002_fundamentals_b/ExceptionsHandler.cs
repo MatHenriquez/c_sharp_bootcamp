@@ -9,14 +9,18 @@
 
         public static int HandledDivision(int x, int y)
         {
+            int result;
             try
             {
-                return x / y;
+                result = x / y;
             }
-            catch
+            catch (Exception e)
             {
-                return -1;
+                Console.WriteLine(e.ToString());
             }
+            finally { result = 0; }
+
+            return result;
         }
     }
 }
