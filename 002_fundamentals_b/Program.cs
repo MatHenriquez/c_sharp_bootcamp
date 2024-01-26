@@ -4,3 +4,9 @@
 Console.WriteLine(ExceptionsHandler.HandledDivision(1, 0));
 
 ExceptionsHandler.Run();
+
+Console.Clear();
+Console.WriteLine("Press a key to take a nap");
+Console.ReadLine();
+
+AsyncExample.TakeNap();
