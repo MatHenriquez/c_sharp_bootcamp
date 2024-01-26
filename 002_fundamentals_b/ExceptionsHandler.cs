@@ -30,6 +30,9 @@
             try
             {
                 int? input = int.Parse(Console.ReadLine());
+
+                if (input == 10)
+                    throw new Exception("Invalid");
             }
             catch (FormatException e)
             {
