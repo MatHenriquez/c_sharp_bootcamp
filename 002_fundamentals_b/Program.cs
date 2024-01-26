@@ -10,3 +10,12 @@ Console.WriteLine("Press a key to take a nap");
 Console.ReadLine();
 
 AsyncExample.TakeNap();
+
+Console.Clear();
+Console.WriteLine("Press a key to order pizza");
+Console.ReadLine();
+
+AsyncExample.OrderPizza();
+AsyncExample.TakeShower();
+
+Console.ReadKey();
