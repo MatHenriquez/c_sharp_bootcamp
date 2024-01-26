@@ -22,5 +22,27 @@
 
             return result;
         }
+
+        public static void Run()
+        {
+            Console.WriteLine("Enter a number:");
+
+            try
+            {
+                int? input = int.Parse(Console.ReadLine());
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine($"FormatException: {e.Message}");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Exception {e.Message}");
+            }
+            finally
+            {
+                Console.WriteLine("End");
+            }
+        }
     }
 }
