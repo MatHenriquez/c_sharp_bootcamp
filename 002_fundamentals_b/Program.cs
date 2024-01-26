@@ -15,7 +15,11 @@ Console.Clear();
 Console.WriteLine("Press a key to order pizza");
 Console.ReadLine();
 
-AsyncExample.OrderPizza();
-AsyncExample.TakeShower();
+//AsyncExample.OrderPizza(); // With await this will be similar to sinchronic
+//AsyncExample.TakeShower();
+
+Task orderPizza = AsyncExample.OrderPizza();
+Task takeShower = AsyncExample.TakeShower();
+await Task.WhenAll(orderPizza, takeShower);
 
 Console.ReadKey();
