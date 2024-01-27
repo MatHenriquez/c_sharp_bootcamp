@@ -26,3 +26,6 @@
 
 var multiplicar = (int a, int b) => a*b;
 Console.WriteLine((multiplicar(4, 7)));
+
+var isAdult = (int age) => age >= 18;
+Console.WriteLine(isAdult(21));
