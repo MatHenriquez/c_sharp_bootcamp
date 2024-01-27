@@ -11,6 +11,13 @@
 
             Greetings goodbye = Goodbye;
             goodbye("Mati");
+
+            DelegatedMethod(goodbye, "Juli");
+        }
+
+        public void DelegatedMethod(Greetings greetings, string name)
+        {
+            greetings(name);
         }
 
         private void Welcome(string name)
