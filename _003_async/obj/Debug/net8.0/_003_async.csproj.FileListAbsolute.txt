@@ -1,0 +1,15 @@
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\_003_async\bin\Debug\net8.0\_003_async.exe
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\_003_async\bin\Debug\net8.0\_003_async.deps.json
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\_003_async\bin\Debug\net8.0\_003_async.runtimeconfig.json
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\_003_async\bin\Debug\net8.0\_003_async.dll
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\_003_async\bin\Debug\net8.0\_003_async.pdb
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\_003_async\obj\Debug\net8.0\_003_async.GeneratedMSBuildEditorConfig.editorconfig
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\_003_async\obj\Debug\net8.0\_003_async.AssemblyInfoInputs.cache
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\_003_async\obj\Debug\net8.0\_003_async.AssemblyInfo.cs
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\_003_async\obj\Debug\net8.0\_003_async.csproj.CoreCompileInputs.cache
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\_003_async\obj\Debug\net8.0\_003_async.sourcelink.json
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\_003_async\obj\Debug\net8.0\_003_async.dll
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\_003_async\obj\Debug\net8.0\refint\_003_async.dll
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\_003_async\obj\Debug\net8.0\_003_async.pdb
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\_003_async\obj\Debug\net8.0\_003_async.genruntimeconfig.cache
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\_003_async\obj\Debug\net8.0\ref\_003_async.dll
