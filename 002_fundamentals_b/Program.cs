@@ -30,5 +30,8 @@
 //var isAdult = (int age) => age >= 18;
 //Console.WriteLine(isAdult(21));
 
+//DelegateExamples delegateExamples = new DelegateExamples();
+//delegateExamples.Greeting();
+
 DelegateExamples delegateExamples = new DelegateExamples();
-delegateExamples.Greeting();
+delegateExamples.Sum();

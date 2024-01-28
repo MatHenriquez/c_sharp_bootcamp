@@ -4,6 +4,16 @@
     {
         public delegate void Greetings(string message);
 
+        public delegate int Adittion(int a, int b);
+
+        private Adittion adittion;
+
+        public void Sum()
+        {
+            adittion = (a, b) => a + b;
+            Console.WriteLine(adittion(5, 10));
+        }
+
         public void Greeting()
         {
             Greetings welcome = Welcome;
