@@ -10,6 +10,13 @@
 
         Func<int, int> square = x => x * x;
 
+        Action<string> sayHi = (string name) => Console.WriteLine($"Hello there, {name}");
+
+        public void SayHi (string name)
+        {
+            sayHi(name);
+        }
+
         public void Square(int x)
         {
             Console.WriteLine(square(x));
