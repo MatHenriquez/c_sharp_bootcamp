@@ -6,7 +6,14 @@
 
         public delegate int Adittion(int a, int b);
 
-        private Adittion adittion;
+        private Adittion? adittion;
+
+        Func<int, int> square = x => x * x;
+
+        public void Square(int x)
+        {
+            Console.WriteLine(square(x));
+        }
 
         public void Sum()
         {

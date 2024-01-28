@@ -35,3 +35,5 @@
 
 DelegateExamples delegateExamples = new DelegateExamples();
 delegateExamples.Sum();
+
+delegateExamples.Square(2);
