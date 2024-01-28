@@ -15,3 +15,8 @@ static async Task GetAll(List<string> pokemons)
 
 displayAllPokemons.Wait();
 
+Task displayPokemons = Task.Run(async () => await GetAll(pokemons)); // Con Run no es necesario el .Start()
+
+
+Console.ReadKey();
+
