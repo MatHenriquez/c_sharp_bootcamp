@@ -1,7 +1,7 @@
 ﻿//List<string> pokemons = new List<string>(); Ahora puedo asignar el valor directamente:
 List<string> pokemons = ["Pikachu", "Charmander", "Squirtle"];
 
-Task displayAllPokemons = Task.Run(async () => await GetAll(pokemons)); // Recibe un Action como parámetro
+//Task displayAllPokemons = Task.Run(async () => await GetAll(pokemons)); // Recibe un Action como parámetro
 
 static async Task GetAll(List<string> pokemons)
 {
@@ -13,10 +13,11 @@ static async Task GetAll(List<string> pokemons)
         Console.WriteLine(pokemon);
 }
 
-displayAllPokemons.Wait();
+//displayAllPokemons.Wait();
 
-Task displayPokemons = Task.Run(async () => await GetAll(pokemons)); // Con Run no es necesario el .Start()
+//Task displayPokemons = Task.Run(async () => await GetAll(pokemons)); // Con Run no es necesario el .Start()
 
+Task taskDisplayPokemons = Task.Run(() => GetAll(pokemons)); // Ejecuto directamente
 
 Console.ReadKey();
 
