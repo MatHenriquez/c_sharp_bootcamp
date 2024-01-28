@@ -30,7 +30,7 @@
 //var isAdult = (int age) => age >= 18;
 //Console.WriteLine(isAdult(21));
 
-DelegateExamples delegateExamples = new DelegateExamples();
+//DelegateExamples delegateExamples = new DelegateExamples();
 //delegateExamples.Greeting();
 
 //DelegateExamples delegateExamples = new DelegateExamples();
@@ -38,4 +38,7 @@ DelegateExamples delegateExamples = new DelegateExamples();
 
 //delegateExamples.Square(2);
 
-delegateExamples.SayHi("Matt");
+//delegateExamples.SayHi("Matt");
+
+Serialization serializationExample = new Serialization("Matt", "Damon");
+Console.WriteLine(serializationExample.SerializeToJSON());
