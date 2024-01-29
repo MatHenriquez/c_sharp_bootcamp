@@ -40,7 +40,15 @@
 //}
 
 // Obtengo los nombre de las univerdades ordenadas por nombre
-IEnumerable<string> universities = DBContext.Universities.OrderBy(u => u.Name).Select(u => u.Name);
+//IEnumerable<string> universities = DBContext.Universities.OrderBy(u => u.Name).Select(u => u.Name);
+
+//foreach (string university in universities)
+//{
+//    Console.WriteLine(university);
+//}
+
+// Obtengo los nombre de las univerdades ordenadas por nombre descendente
+IEnumerable<string> universities = DBContext.Universities.OrderByDescending(u => u.Name).Select(u => u.Name);
 
 foreach (string university in universities)
 {
