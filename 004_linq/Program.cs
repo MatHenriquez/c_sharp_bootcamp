@@ -20,19 +20,27 @@
 //Console.WriteLine(GetPi());
 //Console.WriteLine(getPi());
 
-// Obtengo los nombres de los estudiantes
-IEnumerable<string> names = DBContext.Students.Select(s => s.FirstName);
+//// Obtengo los nombres de los estudiantes
+//IEnumerable<string> names = DBContext.Students.Select(s => s.FirstName);
 
-foreach (string name in names)
-{
-    Console.WriteLine(name);
-}
+//foreach (string name in names)
+//{
+//    Console.WriteLine(name);
+//}
 
-// Obtengo los nombres y appellidos de los estudiantes
-IEnumerable<string> namesAndLastNames = DBContext.Students.Select(s => $"{s.FirstName} {s.LastName}");
+//// Obtengo los nombres y appellidos de los estudiantes
+//IEnumerable<string> namesAndLastNames = DBContext.Students.Select(s => $"{s.FirstName} {s.LastName}");
 
-// Obtengo los nombre de las univerdades de USA
-IEnumerable<string> universities = DBContext.Universities.Where(u => u.Country == "USA").Select(u => u.Name);
+//// Obtengo los nombre de las univerdades de USA
+//IEnumerable<string> universities = DBContext.Universities.Where(u => u.Country == "USA").Select(u => u.Name);
+
+//foreach (string university in universities)
+//{
+//    Console.WriteLine(university);
+//}
+
+// Obtengo los nombre de las univerdades ordenadas por nombre
+IEnumerable<string> universities = DBContext.Universities.OrderBy(u => u.Name).Select(u => u.Name);
 
 foreach (string university in universities)
 {
