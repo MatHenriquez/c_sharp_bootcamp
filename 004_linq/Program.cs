@@ -36,13 +36,17 @@
 //IEnumerable<string> universities = DBContext.Universities.OrderByDescending(u => u.Name).Select(u => u.Name);
 
 // Agrrupo universidades por país
-var universities = DBContext.Universities.GroupBy(u => u.Country);
+//var universities = DBContext.Universities.GroupBy(u => u.Country);
 
-foreach (var group in universities)
-{
-    Console.WriteLine($"Universities in {group.Key}: {group.Count()}");
-    foreach (var university in group)
-    {
-        Console.WriteLine($"\t{university.Name}");
-    }
-}
+//foreach (var group in universities)
+//{
+//    Console.WriteLine($"Universities in {group.Key}: {group.Count()}");
+//    foreach (var university in group)
+//    {
+//        Console.WriteLine($"\t{university.Name}");
+//    }
+//}
+
+// Obtengo cantidad de universidades en Canadá
+int universitiesInCanada = DBContext.Universities.Count(u => u.Country == "Canada");
+Console.WriteLine($"Universities in Canada: {universitiesInCanada}");
