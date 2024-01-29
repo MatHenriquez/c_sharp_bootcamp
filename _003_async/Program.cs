@@ -30,7 +30,7 @@ static async Task<List<string>> GetAllPokemons(List<string> pokemons)
 
 Task<List<string>> taskDisplayPokemons = Task.Run(() => GetAllPokemons(pokemons)); // Ejecuto directamente
 
-await taskDisplayPokemons.ContinueWith((task) => task.Result);
+await taskDisplayPokemons.ContinueWith((task) => task.Result, TaskContinuationOptions.OnlyOnRanToCompletion); // Continuo con la tarea nueva sólo si la anterior se completó
 
 Console.ReadKey();
 
