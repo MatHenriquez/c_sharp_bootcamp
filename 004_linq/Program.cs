@@ -52,5 +52,13 @@
 //Console.WriteLine($"Universities in Canada: {universitiesInCanada}");
 
 // Obtengo la cantidad de países en los que hay universidades
-int countriesWithUniversities = DBContext.Universities.Select(u => u.Country).Distinct().Count();
-Console.WriteLine($"Countries with universities: {countriesWithUniversities}");
+//int countriesWithUniversities = DBContext.Universities.Select(u => u.Country).Distinct().Count();
+//Console.WriteLine($"Countries with universities: {countriesWithUniversities}");
+
+// Obtengo nombre, apellido y país de los estudiantes
+var values = DBContext.Students.Join(DBContext.Universities, s => s.UniversityId, u => u.Id, (s, u) => new { s.FirstName, s.LastName, u.Name });
+
+foreach (var value in values)
+{
+    Console.WriteLine($"{value.FirstName} {value.LastName} - {value.Name}");
+}
