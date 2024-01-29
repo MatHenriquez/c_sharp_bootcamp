@@ -48,5 +48,9 @@
 //}
 
 // Obtengo cantidad de universidades en Canadá
-int universitiesInCanada = DBContext.Universities.Count(u => u.Country == "Canada");
-Console.WriteLine($"Universities in Canada: {universitiesInCanada}");
+//int universitiesInCanada = DBContext.Universities.Count(u => u.Country == "Canada");
+//Console.WriteLine($"Universities in Canada: {universitiesInCanada}");
+
+// Obtengo la cantidad de países en los que hay universidades
+int countriesWithUniversities = DBContext.Universities.Select(u => u.Country).Distinct().Count();
+Console.WriteLine($"Countries with universities: {countriesWithUniversities}");
