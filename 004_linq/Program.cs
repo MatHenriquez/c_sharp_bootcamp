@@ -23,34 +23,26 @@
 //// Obtengo los nombres de los estudiantes
 //IEnumerable<string> names = DBContext.Students.Select(s => s.FirstName);
 
-//foreach (string name in names)
-//{
-//    Console.WriteLine(name);
-//}
-
 //// Obtengo los nombres y appellidos de los estudiantes
 //IEnumerable<string> namesAndLastNames = DBContext.Students.Select(s => $"{s.FirstName} {s.LastName}");
 
 //// Obtengo los nombre de las univerdades de USA
 //IEnumerable<string> universities = DBContext.Universities.Where(u => u.Country == "USA").Select(u => u.Name);
 
-//foreach (string university in universities)
-//{
-//    Console.WriteLine(university);
-//}
-
 // Obtengo los nombre de las univerdades ordenadas por nombre
 //IEnumerable<string> universities = DBContext.Universities.OrderBy(u => u.Name).Select(u => u.Name);
 
-//foreach (string university in universities)
-//{
-//    Console.WriteLine(university);
-//}
-
 // Obtengo los nombre de las univerdades ordenadas por nombre descendente
-IEnumerable<string> universities = DBContext.Universities.OrderByDescending(u => u.Name).Select(u => u.Name);
+//IEnumerable<string> universities = DBContext.Universities.OrderByDescending(u => u.Name).Select(u => u.Name);
 
-foreach (string university in universities)
+// Agrrupo universidades por país
+var universities = DBContext.Universities.GroupBy(u => u.Country);
+
+foreach (var group in universities)
 {
-    Console.WriteLine(university);
+    Console.WriteLine($"Universities in {group.Key}: {group.Count()}");
+    foreach (var university in group)
+    {
+        Console.WriteLine($"\t{university.Name}");
+    }
 }
