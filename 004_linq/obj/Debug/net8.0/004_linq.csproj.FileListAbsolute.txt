@@ -1,0 +1,15 @@
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\004_linq\bin\Debug\net8.0\004_linq.exe
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\004_linq\bin\Debug\net8.0\004_linq.deps.json
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\004_linq\bin\Debug\net8.0\004_linq.runtimeconfig.json
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\004_linq\bin\Debug\net8.0\004_linq.dll
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\004_linq\bin\Debug\net8.0\004_linq.pdb
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\004_linq\obj\Debug\net8.0\004_linq.GeneratedMSBuildEditorConfig.editorconfig
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\004_linq\obj\Debug\net8.0\004_linq.AssemblyInfoInputs.cache
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\004_linq\obj\Debug\net8.0\004_linq.AssemblyInfo.cs
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\004_linq\obj\Debug\net8.0\004_linq.csproj.CoreCompileInputs.cache
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\004_linq\obj\Debug\net8.0\004_linq.sourcelink.json
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\004_linq\obj\Debug\net8.0\004_linq.dll
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\004_linq\obj\Debug\net8.0\refint\004_linq.dll
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\004_linq\obj\Debug\net8.0\004_linq.pdb
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\004_linq\obj\Debug\net8.0\004_linq.genruntimeconfig.cache
+G:\Programming\courses\codigo_facilito\bootcamp_c_sharp\004_linq\obj\Debug\net8.0\ref\004_linq.dll

@@ -1,2 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿void SayHello()
+{
+    Console.WriteLine("Hello");
+}
+
+Action sayHello = () => Console.WriteLine("Hello"); // Action cuando no devuelve un valor
+
+SayHello();
+sayHello();
