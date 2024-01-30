@@ -68,9 +68,10 @@
 //var values = DBContext.Students.Take(2);
 
 // Obtengo los estudiantes de la lista excepto los dos primeros
-var values = DBContext.Students.Skip(2);
+//var values = DBContext.Students.Skip(2);
 
-foreach (var value in values)
-{
-    Console.WriteLine($"{value.FirstName} {value.LastName}");
-}
+// Obtengo si hay un studiante llamado John
+bool exists = DBContext.Students.Any(s => s.FirstName == "John");
+
+// Obtengo si todos los estudiantes se llaman John
+bool allAreFromUSA = DBContext.Students.All(s => s.FirstName == "John");
