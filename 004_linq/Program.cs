@@ -58,11 +58,19 @@
 // Obtengo nombre, apellido y país de los estudiantes
 //var values = DBContext.Students.Join(DBContext.Universities, s => s.UniversityId, u => u.Id, (s, u) => new { s.FirstName, s.LastName, u.Name });
 
-var values = from n in DBContext.Students
-             join u in DBContext.Universities on n.UniversityId equals u.Id
-             select new { n.FirstName, n.LastName, u.Name };
+
+// Obtengo nombre, apellido y país de los estudiantes usando operadores de consulta
+//var values = from n in DBContext.Students
+//             join u in DBContext.Universities on n.UniversityId equals u.Id
+//             select new { n.FirstName, n.LastName, u.Name };
+
+// Obtengo los dos primeros estudiantes de la lista
+//var values = DBContext.Students.Take(2);
+
+// Obtengo los estudiantes de la lista excepto los dos primeros
+var values = DBContext.Students.Skip(2);
 
 foreach (var value in values)
 {
-    Console.WriteLine($"{value.FirstName} {value.LastName} - {value.Name}");
+    Console.WriteLine($"{value.FirstName} {value.LastName}");
 }
