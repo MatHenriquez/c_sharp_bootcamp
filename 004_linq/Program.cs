@@ -82,15 +82,25 @@ using LINQDemos.Models;
 //var lastStudent = DBContext.Students.LastOrDefault(s => s.FirstName == "John");
 
 // Obtengo los estudiantes cuyo apellido comience con D. Luego otra, con P y finalmente, creo una nueva lista con ambas listas.
-var studentsD = DBContext.Students.Where(s => s.LastName.StartsWith('D'));
-var studentsP = DBContext.Students.Where(s => s.LastName.StartsWith('P'));
-var allStudents = new List<List<Student>>();
-allStudents.Add(studentsD.ToList());
-allStudents.Add(studentsP.ToList());
+//var studentsD = DBContext.Students.Where(s => s.LastName.StartsWith('D'));
+//var studentsP = DBContext.Students.Where(s => s.LastName.StartsWith('P'));
+//var allStudents = new List<List<Student>>();
+//allStudents.Add(studentsD.ToList());
+//allStudents.Add(studentsP.ToList());
 
-var students = allStudents.SelectMany(s => s);
+//var students = allStudents.SelectMany(s => s);
 
-foreach (var student in students)
+//foreach (var student in students)
+//{
+//    Console.WriteLine($"{student.FirstName} {student.LastName}");
+//}
+
+// Obtengo los estudiantes cuyo apellido comience con D o P. Luego otra, con P o S y finalmente, creo una nueva lista con excluyendo los que están en la segunda pero no en la primera.
+var studentsDP = DBContext.Students.Where(s => s.LastName.StartsWith('D') || s.LastName.StartsWith('P'));
+var studentsPS = DBContext.Students.Where(s => s.LastName.StartsWith('S') || s.LastName.StartsWith('P'));
+var allStudents = studentsDP.Except(studentsPS);
+
+foreach (var student in allStudents)
 {
     Console.WriteLine($"{student.FirstName} {student.LastName}");
 }
