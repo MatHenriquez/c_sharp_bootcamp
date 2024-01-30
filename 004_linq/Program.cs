@@ -56,7 +56,11 @@
 //Console.WriteLine($"Countries with universities: {countriesWithUniversities}");
 
 // Obtengo nombre, apellido y país de los estudiantes
-var values = DBContext.Students.Join(DBContext.Universities, s => s.UniversityId, u => u.Id, (s, u) => new { s.FirstName, s.LastName, u.Name });
+//var values = DBContext.Students.Join(DBContext.Universities, s => s.UniversityId, u => u.Id, (s, u) => new { s.FirstName, s.LastName, u.Name });
+
+var values = from n in DBContext.Students
+             join u in DBContext.Universities on n.UniversityId equals u.Id
+             select new { n.FirstName, n.LastName, u.Name };
 
 foreach (var value in values)
 {
