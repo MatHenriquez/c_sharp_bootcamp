@@ -95,10 +95,13 @@ using LINQDemos.Models;
 //    Console.WriteLine($"{student.FirstName} {student.LastName}");
 //}
 
-// Obtengo los estudiantes cuyo apellido comience con D o P. Luego otra, con P o S y finalmente, creo una nueva lista con excluyendo los que están en la segunda pero no en la primera.
-var studentsDP = DBContext.Students.Where(s => s.LastName.StartsWith('D') || s.LastName.StartsWith('P'));
-var studentsPS = DBContext.Students.Where(s => s.LastName.StartsWith('S') || s.LastName.StartsWith('P'));
-var allStudents = studentsDP.Except(studentsPS);
+// Obtengo los estudiantes cuyo apellido comience con D o B. Luego otra, con B o S y finalmente, creo una nueva lista con excluyendo los que están en la segunda pero no en la primera.
+var studentsDB = DBContext.Students.Where(s => s.LastName.StartsWith('D') || s.LastName.StartsWith('B'));
+var studentsAB = DBContext.Students.Where(s => s.LastName.StartsWith('A') || s.LastName.StartsWith('B'));
+//var allStudents = studentsDP.Except(studentsAB);
+
+// Obtengo los estudiantes que comienzan con D o B intersección con los que comienzan con A o B
+var allStudents = studentsDB.Intersect(studentsAB);
 
 foreach (var student in allStudents)
 {
