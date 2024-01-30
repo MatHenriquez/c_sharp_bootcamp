@@ -1,4 +1,5 @@
 ﻿using LINQDemos;
+using LINQDemos.Models;
 
 //void SayHello()
 //{
@@ -77,5 +78,19 @@
 //bool allAreFromUSA = DBContext.Students.All(s => s.FirstName == "John");
 
 // Ejemplificar el uso de First, FirstOrDefault, Last, LastOrDefault
-var student = DBContext.Students.FirstOrDefault(s => s.FirstName == "John");
-var lastStudent = DBContext.Students.LastOrDefault(s => s.FirstName == "John");
+//var student = DBContext.Students.FirstOrDefault(s => s.FirstName == "John");
+//var lastStudent = DBContext.Students.LastOrDefault(s => s.FirstName == "John");
+
+// Obtengo los estudiantes cuyo apellido comience con D. Luego otra, con P y finalmente, creo una nueva lista con ambas listas.
+var studentsD = DBContext.Students.Where(s => s.LastName.StartsWith('D'));
+var studentsP = DBContext.Students.Where(s => s.LastName.StartsWith('P'));
+var allStudents = new List<List<Student>>();
+allStudents.Add(studentsD.ToList());
+allStudents.Add(studentsP.ToList());
+
+var students = allStudents.SelectMany(s => s);
+
+foreach (var student in students)
+{
+    Console.WriteLine($"{student.FirstName} {student.LastName}");
+}
