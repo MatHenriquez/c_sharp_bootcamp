@@ -96,17 +96,20 @@ using LINQDemos.Models;
 //}
 
 // Obtengo los estudiantes cuyo apellido comience con D o B. Luego otra, con B o S y finalmente, creo una nueva lista con excluyendo los que están en la segunda pero no en la primera.
-var studentsDB = DBContext.Students.Where(s => s.LastName.StartsWith('D') || s.LastName.StartsWith('B'));
-var studentsAB = DBContext.Students.Where(s => s.LastName.StartsWith('A') || s.LastName.StartsWith('B'));
+//var studentsDB = DBContext.Students.Where(s => s.LastName.StartsWith('D') || s.LastName.StartsWith('B'));
+//var studentsAB = DBContext.Students.Where(s => s.LastName.StartsWith('A') || s.LastName.StartsWith('B'));
 //var allStudents = studentsDP.Except(studentsAB);
 
 // Obtengo los estudiantes que comienzan con D o B intersección con los que comienzan con A o B
 //var allStudents = studentsDB.Intersect(studentsAB);
 
 // Ejemplifico la unión de dos listas
-var allStudents = studentsDB.Union(studentsAB);
+//var allStudents = studentsDB.Union(studentsAB);
 
-foreach (var student in allStudents)
+// Obtengo la lista de universidade ordenadas por nombre y la revierto
+var universities = DBContext.Universities.OrderBy(u => u.Name).Reverse();
+
+foreach (var university in universities)
 {
-    Console.WriteLine($"{student.FirstName} {student.LastName}");
+    Console.WriteLine(university.Name);
 }
