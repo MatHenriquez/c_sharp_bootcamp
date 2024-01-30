@@ -71,7 +71,11 @@
 //var values = DBContext.Students.Skip(2);
 
 // Obtengo si hay un studiante llamado John
-bool exists = DBContext.Students.Any(s => s.FirstName == "John");
+//bool exists = DBContext.Students.Any(s => s.FirstName == "John");
 
 // Obtengo si todos los estudiantes se llaman John
-bool allAreFromUSA = DBContext.Students.All(s => s.FirstName == "John");
+//bool allAreFromUSA = DBContext.Students.All(s => s.FirstName == "John");
+
+// Ejemplificar el uso de First, FirstOrDefault, Last, LastOrDefault
+var student = DBContext.Students.FirstOrDefault(s => s.FirstName == "John");
+var lastStudent = DBContext.Students.LastOrDefault(s => s.FirstName == "John");
