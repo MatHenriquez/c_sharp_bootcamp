@@ -101,7 +101,10 @@ var studentsAB = DBContext.Students.Where(s => s.LastName.StartsWith('A') || s.L
 //var allStudents = studentsDP.Except(studentsAB);
 
 // Obtengo los estudiantes que comienzan con D o B intersección con los que comienzan con A o B
-var allStudents = studentsDB.Intersect(studentsAB);
+//var allStudents = studentsDB.Intersect(studentsAB);
+
+// Ejemplifico la unión de dos listas
+var allStudents = studentsDB.Union(studentsAB);
 
 foreach (var student in allStudents)
 {
