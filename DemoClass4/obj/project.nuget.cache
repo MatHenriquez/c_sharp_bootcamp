@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "B5hnMeFm4iURxVuFWxjtM2z+8wiiDmjKY6CgcUTnEp2wyF9fwk654GfgWgDrj5+wzxE89OIVnYjyBelZIaX9+w==",
+  "success": true,
+  "projectFilePath": "G:\\Programming\\courses\\codigo_facilito\\bootcamp_c_sharp\\DemoClass4\\DemoClass4.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\trechi\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\trechi\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\trechi\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\trechi\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\trechi\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\trechi\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
