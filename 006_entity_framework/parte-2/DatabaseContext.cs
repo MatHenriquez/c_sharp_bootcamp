@@ -57,4 +57,9 @@ public class DatabaseContext : DbContext
     /// </value>
     public DbSet<Customer> Customers { get; set; } =
         null!; // DbSet<Customer> también se inicializa con null!, delegando la inicialización a EF.
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        optionsBuilder.UseSqlServer("Server=(localdb)\mssqllocaldb;Database=EntityFrameworkParte2;");
+    }
 }
