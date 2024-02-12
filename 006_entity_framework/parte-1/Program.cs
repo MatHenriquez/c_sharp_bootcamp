@@ -10,6 +10,8 @@ var logger = LoggerFactory
 // Nombre constante para la base de datos en memoria.
 const string databaseName = "MyDB1";
 
+var options = new DbContextOptionsBuilder<DatabaseContext>().UseInMemoryDatabase(databaseName).Options;
+
 var context = new DatabaseContext();
 
 // Creación de un nuevo cliente al contexto.
