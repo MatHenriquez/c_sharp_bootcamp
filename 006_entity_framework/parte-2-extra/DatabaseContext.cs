@@ -1,4 +1,4 @@
-using Cf.Dotnet.EntityFramework.Parte2Extra.ModelConfigurations;
+using Cf.Dotnet.EntityFramework.Parte2Extra;
 using Cf.Dotnet.EntityFramework.Parte2Extra.Models;
 using Microsoft.EntityFrameworkCore;
 
