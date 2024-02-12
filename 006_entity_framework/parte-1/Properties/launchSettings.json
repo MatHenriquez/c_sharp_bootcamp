@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Cf.Dotnet.EntityFramework.Parte1": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:61810;http://localhost:61813"
+    }
+  }
+}
