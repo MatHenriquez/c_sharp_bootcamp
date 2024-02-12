@@ -12,7 +12,7 @@ const string databaseName = "MyDB1";
 
 var options = new DbContextOptionsBuilder<DatabaseContext>().UseInMemoryDatabase(databaseName).Options;
 
-var context = new DatabaseContext();
+var context = new DatabaseContext(options);
 
 // Creación de un nuevo cliente al contexto.
 var customer = new Customer
@@ -21,6 +21,8 @@ var customer = new Customer
 };
 
 logger.LogDebug("Customer {CustomerId} created", customer.Id);
+context.Customers.Add(customer); // Guarda en memoria
+context.SaveChanges();
 
 // Creación de una lista de artículos del catálogo.
 var catalogItems = new List<CatalogItem>
@@ -38,6 +40,8 @@ var catalogItems = new List<CatalogItem>
 };
 
 logger.LogDebug("Catalog items {CatalogItems} created", catalogItems.Select(x => x.Id));
+context.CatalogItems.AddRange(catalogItems);
+context.SaveChanges();
 
 // Creación de una orden.
 var order = new Order
