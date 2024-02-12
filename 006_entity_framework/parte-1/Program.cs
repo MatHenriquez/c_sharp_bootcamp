@@ -52,3 +52,5 @@ var order = new Order
 };
 
 logger.LogDebug("Order {OrderId} created", order.Id);
+context.Orders.Add(order);
+context.SaveChanges();  
