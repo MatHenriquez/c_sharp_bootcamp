@@ -60,6 +60,6 @@ public class DatabaseContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=(localdb)\mssqllocaldb;Database=EntityFrameworkParte2;");
+        optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=EntityFrameworkParte2;");
     }
 }
