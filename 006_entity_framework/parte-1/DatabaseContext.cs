@@ -1,3 +1,6 @@
+using Cf.Dotnet.EntityFramework.Parte1.Models;
+using Microsoft.EntityFrameworkCore;
+
 namespace Cf.Dotnet.EntityFramework.Parte1;
 
 /// <summary>
@@ -28,9 +31,4 @@ public class DatabaseContext : DbContext
         : base(options)
     {
     }
-
-    // Le digo a Entity Framework cuáles son mis modelos
-    public DbSet<Customer> Customers { get; set; } = null!;
-    public DbSet<CatalogItem> CatalogItems { get; set; } = null!;
-    public DbSet<Order> Orders { get; set; } = null!;
 }
