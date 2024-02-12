@@ -8,7 +8,7 @@ var logger = LoggerFactory
     .CreateLogger<Program>();
 
 // Nombre constante para la base de datos en memoria.
-const string databaseName = "escribe el nombre de tu base de datos";
+const string databaseName = "MyDB1";
 
 // Creación de un nuevo cliente al contexto.
 var customer = new Customer
@@ -39,7 +39,7 @@ logger.LogDebug("Catalog items {CatalogItems} created", catalogItems.Select(x =>
 var order = new Order
 {
     CustomerId = customer.Id,
-    CatalogItemId = catalog.Id,
+    CatalogItemId = catalogItems[0].Id,
     Quantity = 1
 };
 
