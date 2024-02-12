@@ -10,6 +10,8 @@ var logger = LoggerFactory
 // Nombre constante para la base de datos en memoria.
 const string databaseName = "MyDB1";
 
+var context = new DatabaseContext();
+
 // Creación de un nuevo cliente al contexto.
 var customer = new Customer
 {
