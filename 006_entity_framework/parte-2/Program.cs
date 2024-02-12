@@ -1,6 +1,7 @@
 using Cf.Dotnet.EntityFramework.Parte2;
 using Cf.Dotnet.EntityFramework.Parte2.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Transactions;
 
 // Creación de un logger para registrar la actividad del programa.
 var logger = LoggerFactory
@@ -9,6 +10,7 @@ var logger = LoggerFactory
 
 // Creación de una instancia del contexto de la base de datos con las opciones configuradas.
 var context = new DatabaseContext();
+var transaction = await context.Database.BeginTransactionAsync();
 
 // Creación y adición de un nuevo cliente al contexto.
 var customer = new Customer
@@ -61,3 +63,4 @@ var order = new Order
 
 context.Orders.Add(order);
 context.SaveChanges();
+transaction.Commit();
